@@ -12,13 +12,12 @@ class Book:
          
         @page_count.setter
         def page_count(self, page_count):
-                """page_count must be an integer" if page_count is not an integer."""
-                if isinstance(page_count, int):
-                    self._page_count = page_count
-                else:
-                    raise ValueError("page_count must be an integer.")
+            """page_count must be an integer" if page_count is not an integer."""
+            if isinstance(page_count, int):
+                self._page_count = page_count
+            else:
+                print("page_count must be an integer")
 
-            
         def turn_page(self):
             print("Flipping the page...wow, you read fast!")
             
